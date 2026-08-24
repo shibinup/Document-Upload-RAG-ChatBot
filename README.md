@@ -22,6 +22,7 @@ The application processes the uploaded PDF, splits it into smaller chunks, gener
 Technology	Purpose
 Python	Backend programming language
 FastAPI	REST API backend
+React js
 LangChain	RAG application framework
 Hugging Face	Embedding and chat models
 ChromaDB	Vector database
@@ -38,7 +39,7 @@ The project follows a standard RAG pipeline.
 
 1. Upload PDF
 
-The user uploads a PDF through the FastAPI API.
+The user uploads a PDF through the React js frontend to FastAPI API.
 
 PDF
  ↓
