@@ -17,65 +17,7 @@ The application processes the uploaded PDF, splits it into smaller chunks, gener
 🔗 LangChain integration
 🔐 Environment variable support for API keys
 🏗️ Architecture
-                ┌─────────────────┐
-                │   User Uploads  │
-                │      PDF        │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │    FastAPI      │
-                │    Backend      │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │   PDF Loader    │
-                │  Extract Text   │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Text Splitter   │
-                │ Chunk Documents │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Hugging Face    │
-                │   Embeddings    │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │    ChromaDB     │
-                │ Vector Database │
-                └────────┬────────┘
-                         │
-                  User Question
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Similarity      │
-                │    Search       │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Retrieved       │
-                │ Context         │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Hugging Face    │
-                │   Chat Model    │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │      Answer     │
-                └─────────────────┘
+
 🛠️ Tech Stack
 Technology	Purpose
 Python	Backend programming language
